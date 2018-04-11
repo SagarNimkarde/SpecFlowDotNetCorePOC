@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using TechTalk.SpecFlow;
 
 namespace SpecFlowNetCorePOC
@@ -18,6 +19,7 @@ namespace SpecFlowNetCorePOC
         public void WhenIPressAdd()
         {
             result = result + nextNumber;
+            Thread.Sleep(5000);
         }
         
         [Then(@"the result should be (.*) on the screen")]
@@ -25,5 +27,10 @@ namespace SpecFlowNetCorePOC
         {
             
         }
+
+        
+      
+        
+
     }
 }
