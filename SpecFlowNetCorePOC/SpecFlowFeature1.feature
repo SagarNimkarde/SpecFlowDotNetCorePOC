@@ -5,6 +5,6 @@
 
 Scenario: Multiply two numbers
 	Given I have entered 50 into the calculator
-	And I have entered 70 into the calculator
+	And I have entered 50 into the calculator
 	When I press multiply
-	Then the result should be 3500 on the screen
+	Then the result should be 2500 on the screen
