@@ -10,7 +10,7 @@ namespace SpecFlowNetCorePOC
         [When(@"I press multiply")]
         public void WhenIPressMultiply()
         {
-            Thread.Sleep(3000);
+            Thread.Sleep(2000);
         }
     }
 }

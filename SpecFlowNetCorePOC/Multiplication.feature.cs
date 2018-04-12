@@ -24,7 +24,7 @@ namespace SpecFlow.GeneratedTests
         
         private Xunit.Abstractions.ITestOutputHelper _testOutputHelper;
         
-#line 1 "SpecFlowFeature1.feature"
+#line 1 "Multiplication.feature"
 #line hidden
         
         public CalculatorFeatureMultiplyNumbersFeature(CalculatorFeatureMultiplyNumbersFeature.FixtureData fixtureData, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
@@ -72,22 +72,26 @@ namespace SpecFlow.GeneratedTests
             this.ScenarioTearDown();
         }
         
-        [Xunit.FactAttribute(DisplayName="Multiply two numbers")]
+        [Xunit.TheoryAttribute(DisplayName="Multiply two numbers")]
         [Xunit.TraitAttribute("FeatureTitle", "CalculatorFeatureMultiplyNumbers")]
         [Xunit.TraitAttribute("Description", "Multiply two numbers")]
-        public virtual void MultiplyTwoNumbers()
+        [Xunit.InlineDataAttribute("10", "20", "200", new string[0])]
+        [Xunit.InlineDataAttribute("20", "20", "400", new string[0])]
+        [Xunit.InlineDataAttribute("20", "10", "200", new string[0])]
+        [Xunit.InlineDataAttribute("0", "0", "0", new string[0])]
+        public virtual void MultiplyTwoNumbers(string a, string b, string c, string[] exampleTags)
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Multiply two numbers", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Multiply two numbers", exampleTags);
 #line 6
 this.ScenarioSetup(scenarioInfo);
 #line 7
- testRunner.Given("I have entered 50 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given(string.Format("I have entered {0} into the calculator", a), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 8
- testRunner.And("I have entered 50 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And(string.Format("I have entered {0} into the calculator", b), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 9
  testRunner.When("I press multiply", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 10
- testRunner.Then("the result should be 2500 on the screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then(string.Format("the result should be {0} on the screen", c), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

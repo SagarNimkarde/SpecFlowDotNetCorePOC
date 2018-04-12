@@ -7,6 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Addition.feature.cs" />
+    <Compile Remove="CalculatorFeatureMultiplyNumbersSteps.cs" />
+    <Compile Remove="CalculatorFeatureSteps.cs" />
+    <Compile Remove="Multiplication.feature.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Addition.feature" />
+    <None Remove="Multiplication.feature" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.6.0" />
     <PackageReference Include="SpecFlow" Version="2.2.0" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.4.1" />
@@ -21,26 +33,44 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="CalculatorFeature.feature.cs">
+    <Compile Update="CalcAdd.feature.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>CalculatorFeature.feature</DependentUpon>
+      <DependentUpon>CalcAdd.feature</DependentUpon>
     </Compile>
-    <Compile Update="SpecFlowFeature1.feature.cs">
+    <Compile Update="CalcDivide.feature.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>SpecFlowFeature1.feature</DependentUpon>
+      <DependentUpon>CalcDivide.feature</DependentUpon>
+    </Compile>
+    <Compile Update="CalcMultiply.feature.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CalcMultiply.feature</DependentUpon>
+    </Compile>
+    <Compile Update="CalcSubtract.feature.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CalcSubtract.feature</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="CalculatorFeature.feature">
+    <None Update="CalcAdd.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>CalculatorFeature.feature.cs</LastGenOutput>
+      <LastGenOutput>CalcAdd.feature.cs</LastGenOutput>
     </None>
-    <None Update="SpecFlowFeature1.feature">
+    <None Update="CalcDivide.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>SpecFlowFeature1.feature.cs</LastGenOutput>
+      <LastGenOutput>CalcDivide.feature.cs</LastGenOutput>
+    </None>
+    <None Update="CalcMultiply.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>CalcMultiply.feature.cs</LastGenOutput>
+    </None>
+    <None Update="CalcSubtract.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>CalcSubtract.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
 

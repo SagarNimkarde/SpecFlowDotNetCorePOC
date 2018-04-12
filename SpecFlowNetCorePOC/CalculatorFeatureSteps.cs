@@ -28,7 +28,7 @@ namespace SpecFlowNetCorePOC
         public void WhenIPressAdd()
         {
             result = result + nextNumber;
-            Thread.Sleep(5000);
+            Thread.Sleep(1000);
         }
         
         [Then(@"the result should be (.*) on the screen")]
