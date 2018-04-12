@@ -10,3 +10,9 @@ Scenario: Add two numbers
 	When I press add
 	Then the result should be 140 on the screen
 
+Scenario: Add another two numbers
+	Given I have entered 80 into the calculator
+	And I have entered 80 into the calculator
+	When I press add
+	Then the result should be 160 on the screen
+
