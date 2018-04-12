@@ -5,10 +5,10 @@
 
 @calc
 Scenario Outline: Subtract two numbers
-	Given I have entered 70 into the calculator
-	And I have also entered 50 into the calculator
+	Given I have entered <a> into the calculator
+	And I have also entered <b> into the calculator
 	When I press subtract
-	Then the result should be 20 on the screen
+	Then the result should be <c> on the screen
 	Examples: 
 	| a  | b  | c   |
 	| 20 | 10 | 10  |
