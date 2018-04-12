@@ -20,7 +20,8 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.6.0" />
-    <PackageReference Include="SpecFlow" Version="2.2.0" />
+    <PackageReference Include="SpecFlow" Version="2.2.1" />
+    <PackageReference Include="SpecFlow.xUnitAdapter" Version="1.1.0" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.4.1" />
     <PackageReference Include="xunit" Version="2.3.1" />
     <PackageReference Include="xunit.runner.console" Version="2.2.0" />
@@ -33,44 +34,21 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="CalcAdd.feature.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>CalcAdd.feature</DependentUpon>
-    </Compile>
-    <Compile Update="CalcDivide.feature.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>CalcDivide.feature</DependentUpon>
-    </Compile>
-    <Compile Update="CalcMultiply.feature.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>CalcMultiply.feature</DependentUpon>
-    </Compile>
-    <Compile Update="CalcSubtract.feature.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>CalcSubtract.feature</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
     <None Update="CalcAdd.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>CalcAdd.feature.cs</LastGenOutput>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="CalcDivide.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>CalcDivide.feature.cs</LastGenOutput>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="CalcMultiply.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>CalcMultiply.feature.cs</LastGenOutput>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="CalcSubtract.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>CalcSubtract.feature.cs</LastGenOutput>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 
