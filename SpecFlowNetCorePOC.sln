@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.27428.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpecFlowNetCorePOC", "SpecFlowNetCorePOC\SpecFlowNetCorePOC.csproj", "{5DC2537C-FE91-46BB-AA3D-9213DCACED55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecFlowDotNetCoreNunitPOC", "SpecFlowDotNetCoreNunitPOC\SpecFlowDotNetCoreNunitPOC.csproj", "{F11D109C-A421-4A87-8165-CD7547CCD860}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
